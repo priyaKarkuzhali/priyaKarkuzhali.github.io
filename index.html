@@ -1,34 +1,427 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SHUFFLE</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <div style="font-size:40px;text-align:center;height:70px">
-      NUMBER   PUZZLE
-    </div>  
-         <br>
-    <div class="container">
-        <section class="icon">
-            <img src="images/icon.png">
-            
-        </section><br>
-        <section class= "centre-item">
-            <ul>
-                <li class="buttonplay">
-                    
-                     <a href="numberpuzzle.html" class="play" >PLAY</a>;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                     <a href="https://www.google.com" >EXIT</a>
-                 
-                </li>
-            </ul>
-            <div class="content-xs"></div>
-        </section>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <link rel="stylesheet" href="styles/fonts/style.css" />
+    <link rel="stylesheet" href="styles/template.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     
-</body>
+  </head>
+  <body>
+    <div class="layout">
+      <!-- header -->
+      <div class="header white border-box grid sentence-cap">
+        <div class="a centre"></div>
+        <div class="b centre">
+          <span class="icon icon-user"></span>
+          <span> <a href="" class="link white"> agent login</a></span>
+        </div>
+        <div class="c centre">
+          <span class="icon icon-user"></span>
+          <span><a href="" class="link white">customer login</a> </span>
+        </div>
+        <div class="d centre">
+          <span class="icon icon-file-empty"></span>
+          <span> not a member?</span>
+          <span> <a href="" class="link teal">Register</a> </span>
+        </div>
+        <div class="e centre">
+          <span>call us now: 815-123-4657</span>
+        </div>
+        <div class="f centre"></div>
+        <div class="g centre">
+          <span class="icon icon-facebook"></span>
+        </div>
+        <div class="h centre">
+          <span class="icon icon-twitter"></span>
+        </div>
+        <div class="i centre">
+          <span class="icon icon-instagram"> </span>
+        </div>
+        <div class="j centre">
+          <span class="icon icon-pinterest"></span>
+        </div>
+        <div class="k centre"></div>
+      </div>
+      <!-- navbar -->
+      <div class="navbar grid">
+        <div class="head captalizeAll centre bold">
+         <p> v<span class="teal">o</span>yage</p>
+        </div>
+        <div class="nav-items">
+          <a href="" class="link white teal blue captalizeAll">home</a>
+          <a href="" class="link white blue captalizeAll">Destinations</a>
+          <a href="" class="link white blue captalizeAll">cruises</a>
+          <a href="" class="link white blue captalizeAll">special</a>
+          <a href="" class="link white blue captalizeAll">holidays</a>
+          <a href="" class="link white  blue captalizeAll">blog</a>
+          <a href="javascript;" class="round-icon centre">
+            <span class="icon icon-search bolder"></span>
+          </a>
+        </div>
+       
+      </div>
+      <div class="topnav">
+        <div class="head captalizeAll centre bold">
+          <p> v<span class="teal">o</span>yage</p>
+         </div>
+         <div class="signin centre">
+          <span class="icon icon-file-empty"></span>
+          <span> <a href="" class="link teal">Register</a> </span>
+        </div>
+         <a href="javascript;" class="round-icon centre">
+          <span class="icon icon-search bolder"></span>
+        </a>
+        <a href="javascript:void(0);" class="icons hamburger" onclick="openNav()">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </a>
+      </div>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="" class="link white teal blue captalizeAll">home</a>
+        <a href="" class="link white blue captalizeAll">Destinations</a>
+        <a href="" class="link white blue captalizeAll">cruises</a>
+        <a href="" class="link white blue captalizeAll">special</a>
+        <a href="" class="link white blue captalizeAll">holidays</a>
+        <a href="" class="link white  blue captalizeAll">blog</a>
+        <!-- <div></div> -->
+          <span class="icon icon-user"></span>
+          <span> <a href="" class="link sm-link white"> agent login</a></span>
+          <span class="icon icon-user"></span>
+          <span><a href="" class="link sm-link white">customer login</a> </span>
+          <span class=" sm-link">call us now: 815-123-4657</span>
+        </div>
+        
+        
+      </div>
+      <div class="banner">
+        <div class="image-container ">
+          <img src="images/bridgesImgcpy.jpg" class="image-banner" alt="" />
+          <div class="centeredtext-Img centre">
+            <p class="caption-text white bolder captalizeAll">To travel is to live</p>
+            <p class="subcaption-text white bold">
+              You Don't Need Magic to Disappear. All you need is a Destination
+            </p>
+          </div>
+          <div class="buttons centeredbtn-Img centre">
+            <button class="showbtn classicbtn white border-box captalizeAll">
+              show on the map
+            </button>
+            <button class="morebtn classicbtn white border-box captalizeAll" id="popup-btn">more info</button>
+          </div>
+        </div>
+        <a  class="prev-btn link white centre">&#8249;</a>
+        <a  class="nxt-btn link white centre">&#8250;</a>
+      </div>
+      <!-- buttons & inputs -->
+      <div class="find-holiday white ">
+        <div class="grid find-holiday-inner-container border-box">
+          <div class="main-text captalizeAll ">
+            <span > find your </span>
+            <span class="big-text teal mildbold align-left">holidays</span>
+            <div class="triangle-right">
+              <div class="inner-triangle-right"></div>
+            </div>
+          </div>
+          <div class="inputs-fields flexbox flex-50">
+            <div class="sub-text flexbox">
+              <label class="field">Where</label>
+              <input
+                type="text"
+                placeholder="destination"
+                class="place-field input"
+              />
+              <span class="icon icon-globe input-icon"></span>
+            </div>
+            <div class="sub-text flexbox">
+              <label class="field">When</label>
+              <input
+                type="date"
+                placeholder=" select date"
+                class="date-field input sm-input"
+                required
+              />
+            </div>
+          </div>
+        
+          <div class="button-div centre">
+            <button class="classicbtn white search-btn sentence-cap centre"  >
+              search
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- offers -->
+      <div class="offers">
+        <h2 class="dark-blue captalizeAll centre">special offers</h2>
+        <p class="centre dark-blue light">
+          Best 2020 packages where people love to stay
+        </p>
+        <div class="packages flexbox" id="packages">
+         
+        </div>
+        <a  class="prev-btn slide-prev link white centre top-btn">&#8249;</a>
+          <a  class="nxt-btn slide-nxt link white centre top-btn">&#8250;</a>
+        </div>
+        
+      </div>
+      <!-- holiday types -->
+      <div class="image-container plans-type-container">
+        <img src="images/landscape.jpg" class="image-banner image-bg" alt="" />
+        <div class="centeredtext-Img plans-text white centre">
+          <h2 class="captalizeAll bold">holidays type</h2>
+          <p class="light sm-text">
+            get explore your dream to travel the world
+          </p>
+        </div>
+        <div class="plans-type  white border-box flexbox centeredtext-Img centre">
+          <div class="plan-outer plans-type-item">
+            <div class="round-icon item white border-box centre">
+              <span class="icon icon-beach"></span>
+            </div>
+            <p>Beach</p>
+          </div>
+          <div class="plan-outer plans-type-item centre">
+            <div class="round-icon teal active white item centre border-box">
+              <span class="icon icon-ship"></span>
+            </div>
+            <p>Cruises</p>
+          </div>
+          <div class="plan-outer plans-type-item">
+            <div class="round-icon item white border-box centre">
+              <span class="icon icon-safari"></span>
+            </div>
+            <p>Safari</p>
+          </div>
+          <div class="plan-outer plans-type-item">
+            <div class="round-icon item border-box centre">
+              <span class="icon icon-loveheart"></span>
+            </div>
+            <p>Honeymoon</p>
+          </div>
+          <div class="plan-outer plans-type-item">
+            <div class="round-icon item white border-box centre">
+              <span class="icon icon-adventure"></span>
+            </div>
+            <p>adventure</p>
+          </div>
+          <div class="plan-outer plans-type-item">
+            <div class="round-icon item border-box centre">
+              <span class="icon icon-city"></span>
+            </div>
+            <p>city breaks</p>
+          </div>
+        </div>
+      </div>
+      <div class="clients">
+        <h2 class="dark-blue captalizeAll centre">happy clients</h2>
+        <p class="centre dark-blue light">
+          what customer says aboutus and why love us services
+        </p>
+        <div class="clients-reviews border-box flexbox">
+          <div class="boxouter border-box">
+            <div class="box border-box">
+              <p>
+                Lorem ipsum dolor sit amet, adipiscing elit. exercitation nisi
+                ut aliquip commodo consequat.Lorem ipsum dolor sit amet
+              </p>
+              <p class="client-name teal">Client name1</p>
+              <p class="client-country captalizeAll">Usa</p>
+            </div>
+            <div class="tooltip-outer">
+              <div class="tooltip-box">
+                <div class="inner-tooltip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="boxouter border-box">
+            <div class="box border-box">
+              <p>
+                Lorem ipsum dolor sit amet, adipiscing elit. exercitation nisi
+                ut aliquip commodo consequat.Lorem ipsum dolor sit amet
+              </p>
+              <p class="client-name teal">Client name2</p>
+              <p class="client-country captalizeAll">Usa</p>
+            </div>
+            <div class="tooltip-outer">
+              <div class="tooltip-box">
+                <div class="inner-tooltip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="boxouter border-box">
+            <div class="box border-box">
+              <p>
+                Lorem ipsum dolor sit amet, adipiscing elit. exercitation nisi
+                ut aliquip commodo consequat. Lorem ipsum dolor sit amet
+              </p>
+              <p class="client-name teal">Client name3</p>
+              <p class="client-country captalizeAll">Usa</p>
+            </div>
+            <div class="tooltip-outer">
+              <div class="tooltip-box">
+                <div class="inner-tooltip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="boxouter border-box">
+            <div class="box border-box">
+              <p>
+                Lorem ipsum dolor sit amet, adipiscing elit. exercitation nisi
+                ut aliquip commodo consequat.Lorem ipsum dolor sit amet
+              </p>
+              <p class="client-name teal">Client name4</p>
+              <p class="client-country captalizeAll">Usa</p>
+            </div>
+            <div class="tooltip-outer">
+              <div class="tooltip-box">
+                <div class="inner-tooltip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="boxouter border-box" >
+            <div class="box border-box">
+              <p>
+                Lorem ipsum dolor sit amet, adipiscing elit. exercitation nisi
+                ut aliquip commodo consequat.Lorem ipsum dolor sit amet
+              </p>
+              <p class="client-name teal">Client name5</p>
+              <p class="client-country captalizeAll">Usa</p>
+            </div>
+            <div class="tooltip-outer">
+              <div class="tooltip-box">
+                <div class="inner-tooltip"></div>
+              </div>
+            </div>
+          </div>
+          <div class="boxouter border-box" >
+            <div class="box border-box">
+              <p>
+                Lorem ipsum dolor sit amet, adipiscing elit. exercitation nisi
+                ut aliquip commodo consequat.Lorem ipsum dolor sit amet
+              </p>
+              <p class="client-name teal">Client name6</p>
+              <p class="client-country captalizeAll">Usa</p>
+            </div>
+            <div class="tooltip-outer">
+              <div class="tooltip-box">
+                <div class="inner-tooltip"></div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="boxouter border-box">
+            <div class="box border-box">
+              <p>
+                Lorem ipsum dolor sit amet, adipiscing elit. exercitation nisi
+                ut aliquip commodo consequat.Lorem ipsum dolor sit amet
+              </p>
+              <p class="client-name teal">Client name7</p>
+              <p class="client-country captalizeAll">Usa</p>
+            </div>
+            <div class="tooltip-outer">
+              <div class="tooltip-box">
+                <div class="inner-tooltip"></div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <a  class="prev-btn slide-prev client-btn link white centre top-btn">&#8249;</a>
+          <a  class="nxt-btn slide-nxt client-btn link white centre top-btn">&#8250;</a>
+      </div>
+      <div class="footer-links white">
+        <div class="footer-links-items grid">
+          <div class="newsletter">
+            <h3 class="teal sentence-cap">newsletter</h3>
+            <p class="align-left sm-text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, et quasi architecto beatae
+              vitae dicta sunt explicabo
+            </p>
+            <input
+              type="text"
+              placeholder="Subscribe"
+              class="input subscribe"
+            />
+            <button class="classicbtn white go-btn captalizeAll">go</button>
+          </div>
+          <div class="news">
+            <h3 class="teal sentence-cap">Latest news</h3>
+            <div class="news-row grid">
+              <div class="image-news">
+                <img src="images/mountain.jfif" alt="" />
+              </div>
+              <div class="news-info sm-text">
+                <p class="sentence-cap">postformat gallery:Multiple images</p>
+                <p class="teal">october 20,2020 - 3.31pm</p>
+              </div>
+              <div class="image-news">
+                <img src="images/snowboard.jpg" alt="" />
+              </div>
+              <div class="news-info sm-text">
+                <p class="sentence-cap"> snowboarding is fun!</p>
+                <p class="teal">december 21,2019 - 9.11am</p>
+              </div>
+            </div>
+          </div>
+          <div class="tags">
+            <h3 class="teal sentence-cap">tags</h3>
+            <div class="tags-items flexbox sm-text">
+              <div class="sentence-cap border-box">agent login</div>
+              <div class="sentence-cap border-box">customer login</div>
+              <div class="sentence-cap border-box">not a member?</div>
+              <div class="sentence-cap border-box">contact</div>
+              <div class="sentence-cap border-box">new horizons</div>
+              <div class="sentence-cap border-box">landscape</div>
+              <div class="sentence-cap border-box">tags</div>
+              <div class="sentence-cap border-box">nice</div>
+              <div class="sentence-cap border-box">some</div>
+              <div class="sentence-cap border-box">potrait</div>
+            </div>
+          </div>
+          <div class="address">
+            <h3 class="teal sentence-cap">address</h3>
+            <div class="sm-text">
+              <p class="sentence-cap">
+                dieSuhbearbeiter schonhauser allen 157c,10456 Berlin , germany
+              </p>
+              <p><span class="teal">Email:</span>moin@blindtextgenerator.de</p>
+            </div>
+            <div class="footer-icons flexbox">
+              <span class="icon icon-facebook"></span>
+              <span class="icon icon-twitter"></span>
+              <span class="icon icon-instagram"> </span>
+              <span class="icon icon-pinterest"></span>
+            </div>
+          </div>
+        </div>
+        <div class="footer centre sm-text">
+            <span><a href="" class=" teal link">Home</a> </span>
+            <span>:: </span>
+            <span><a href="" class="link white">Destination</a>  </span>
+            <span>:: </span>
+            <span><a href="" class="link white">Cruises</a> </span>
+            <span>:: </span>
+            <span><a href="" class="link white">Specials</a></span>
+            <span>:: </span>
+            <span><a href="" class="link white">Holidays</a></span>
+            <span>:: </span>
+            <span><a href="" class="link white">Blog</a>  </span>
+            <span>:: </span>
+            <span><a href="" class="link white">Contact</a> </span>
+            
+            <p class="grey">Copright@voyage.All rights reserved</p>
+        </div>
+        <div class="scroll-up white">
+          <span class="scroll-arrow bolder">&uarr;</span>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/app.js"></script>
+  </body>
 </html>
